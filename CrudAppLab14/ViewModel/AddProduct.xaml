@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Agregar/Actualizar Producto"
+             x:Class="CrudAppLab14.ViewModel.AddProduct">
+    <ContentPage.Content>
+        <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+            <Entry x:Name="txtPersona" Placeholder="Nombre del Cliente" />
+            <Entry x:Name="txtColegio" Placeholder="Institucion perteneciente" />
+            <Entry x:Name="txtProduct" Placeholder="Producto a entregar" />
+            <Entry x:Name="txtCantidad" Placeholder="Cantidad" />
+            <Entry x:Name="txtFecha" Placeholder="Fecha de entrega" />
+            <Entry x:Name="txtEntrega" Placeholder="Estado de entrega" />
+            <Button x:Name="btnSaveUpdate" Text="Guardar" Clicked="btnSaveUpdate_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
