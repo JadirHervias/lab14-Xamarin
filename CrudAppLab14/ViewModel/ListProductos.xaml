@@ -43,9 +43,7 @@
                                     <Label Text="{Binding Persona}"   Grid.Row="0" Grid.Column="0" />
                                     <Label Text="{Binding Colegio}" Grid.Row="0" Grid.Column="1" />
                                     <Label Text="{Binding Product}" Grid.Row="0" Grid.Column="2" />
-                                    <Label Text="{Binding Fecha}" Grid.Row="0" Grid.Column="3" />
-                                    
-                                    
+                                    <Label Text="{Binding Fecha, StringFormat='{yyyy-MM-dd}'}" Grid.Row="0" Grid.Column="3" />
                                 </Grid>
                             </Frame>
                         </ViewCell>

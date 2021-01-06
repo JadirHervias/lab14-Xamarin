@@ -8,9 +8,13 @@
             <Entry x:Name="txtPersona" Placeholder="Nombre del Cliente" />
             <Entry x:Name="txtColegio" Placeholder="Institucion perteneciente" />
             <Entry x:Name="txtProduct" Placeholder="Producto a entregar" />
-            <Entry x:Name="txtCantidad" Placeholder="Cantidad" />
-            <Entry x:Name="txtFecha" Placeholder="Fecha de entrega" />
-            <Entry x:Name="txtEntrega" Placeholder="Estado de entrega" />
+            <Entry x:Name="txtCantidad" Keyboard="Numeric" Placeholder="Cantidad" />
+            <Label
+                Text="Fecha de entrega"/>
+            <DatePicker
+                x:Name="txtFecha"/>
+            <Label Text="¿Ya fue entregado?"/>
+            <CheckBox x:Name="txtEntrega" Color="Black"/>
             <Button x:Name="btnSaveUpdate" Text="Guardar" Clicked="btnSaveUpdate_Clicked" />
         </StackLayout>
     </ContentPage.Content>

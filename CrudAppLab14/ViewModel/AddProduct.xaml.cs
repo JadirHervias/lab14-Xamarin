@@ -1,11 +1,6 @@
 ﻿using CrudAppLab14.Model;
 using CrudAppLab14.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -35,9 +30,9 @@ namespace CrudAppLab14.ViewModel
                 txtPersona.Text = obj.Persona;
                 txtColegio.Text = obj.Colegio;
                 txtProduct.Text = obj.Product;
-                txtCantidad.Text = obj.Cantidad;
-                txtFecha.Text = obj.Fecha;
-                txtEntrega.Text = obj.Entrega;
+                txtCantidad.Text = obj.Cantidad.ToString();
+                txtFecha.Date = obj.Fecha;
+                txtEntrega.IsChecked = obj.Entrega;
                 _isUpdate = true;
             }
         }
@@ -47,9 +42,9 @@ namespace CrudAppLab14.ViewModel
             obj.Persona = txtPersona.Text;
             obj.Colegio = txtColegio.Text;
             obj.Product = txtProduct.Text;
-            obj.Cantidad = txtCantidad.Text;
-            obj.Fecha = txtFecha.Text;
-            obj.Entrega = txtEntrega.Text;
+            obj.Cantidad = int.Parse(txtCantidad.Text);
+            obj.Fecha = txtFecha.Date;
+            obj.Entrega = txtEntrega.IsChecked;
             if (_isUpdate)
             {
                 obj.Id = productoID;

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace CrudAppLab14.Model
 {
@@ -14,9 +12,9 @@ namespace CrudAppLab14.Model
         public string Persona { get; set; }
         public string Colegio { get; set; }
         public string Product { get; set; }
-        public string Cantidad { get; set; }
-        public string Fecha { get; set; } 
-        public string Entrega { get; set; }
+        public int Cantidad { get; set; }
+        public DateTime Fecha { get; set; } 
+        public bool Entrega { get; set; }
 
     }
 }

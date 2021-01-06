@@ -1,10 +1,7 @@
 ﻿using CrudAppLab14.DataContext;
 using CrudAppLab14.Model;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CrudAppLab14.Services
@@ -13,7 +10,6 @@ namespace CrudAppLab14.Services
     {
         private DatabaseContext getContext()
         {
-            //string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Productos.db3");
             return new DatabaseContext();
         }
 

@@ -1,9 +1,7 @@
 ﻿using CrudAppLab14.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace CrudAppLab14.DataContext
 {
